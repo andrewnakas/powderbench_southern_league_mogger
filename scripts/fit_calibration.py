@@ -50,7 +50,7 @@ LEAD_FACTORS = {"era5": [1.0, 0.9, 0.8], "resorts": [1.0, 0.9, 0.8], "stations":
 BIN_EDGES = [0.0, 0.05, 0.5, 1.5, 3.0, 6.0, float("inf")]
 THRESH_GRID = [round(0.02 * i, 2) for i in range(0, 21)]  # 0.00 .. 0.40 in
 STATION_PRIOR_WET_DAYS = 60
-MIN_MODEL_ROWS = 2000  # a model with less usable history inherits best_match's fit
+MIN_WINTERS = 0.9  # a model with less usable history (in winters) inherits best_match's fit
 
 
 def weighted_median(values: list[float], weights: list[float]) -> float:
@@ -116,13 +116,15 @@ def collect_training(league: str, models: tuple[str, ...]) -> pd.DataFrame:
 
 def fit(league: str, models: tuple[str, ...]) -> dict:
     data = collect_training(league, models)
+    n_stations = data["station_id"].nunique()
+    min_rows = int(MIN_WINTERS * 150 * n_stations)
 
     model_params = {}
     for model in models:
         if model not in data.columns:
             continue
         sub = data.dropna(subset=[model, "truth"])
-        if len(sub) < MIN_MODEL_ROWS:
+        if len(sub) < min_rows:
             print(f"  {model}: only {len(sub)} rows — will inherit best_match")
             continue
         p = fit_model_transform(sub[model], sub["truth"])
