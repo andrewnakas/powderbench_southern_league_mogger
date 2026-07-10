@@ -1,0 +1,43 @@
+name: Submit forecasts
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # southern first submit: round D = today+2 opened at 11:05 UTC
+    - cron: "30 9 * * *"  # southern refresh with 00Z runs, 90 min before the 11:00 UTC cutoff
+    - cron: "30 21 * * *" # stations submit with 12Z/18Z runs, 2.5 h before the 00:00 UTC cutoff
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "Restrict to one league (era5 | resorts | stations); default all"
+        required: false
+      round_date:
+        description: "Restrict to one round date (YYYY-MM-DD)"
+        required: false
+      dry_run:
+        description: "Build and validate but do not push (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: read # the benchmark repo is written via the PAT, not GITHUB_TOKEN
+
+concurrency: submit
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: Forecast and submit all open rounds
+        env:
+          POWDERBENCH_TOKEN: ${{ secrets.POWDERBENCH_TOKEN }}
+        run: |
+          ARGS=""
+          [ -n "${{ github.event.inputs.league }}" ] && ARGS="$ARGS --league ${{ github.event.inputs.league }}"
+          [ -n "${{ github.event.inputs.round_date }}" ] && ARGS="$ARGS --round ${{ github.event.inputs.round_date }}"
+          [ "${{ github.event.inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          mogger run $ARGS

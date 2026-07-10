@@ -1,0 +1,8 @@
+{
+  "team": "southern-league-mogger",
+  "target_repo": "andrewnakas/powderbench",
+  "raw_base": "https://raw.githubusercontent.com/andrewnakas/powderbench/main",
+  "leagues": ["era5", "resorts", "stations"],
+  "models": ["ecmwf_ifs025", "gfs_seamless", "icon_seamless", "best_match"],
+  "cutoff_margin_min": 10
+}

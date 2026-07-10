@@ -1,0 +1,513 @@
+[
+ {
+  "station_id": "480:MT:SNTL",
+  "league": "stations",
+  "latitude": 45.06235,
+  "longitude": -109.94488,
+  "elevation_ft": 9110
+ },
+ {
+  "station_id": "1308:UT:SNTL",
+  "league": "stations",
+  "latitude": 40.59124,
+  "longitude": -111.63775,
+  "elevation_ft": 8750
+ },
+ {
+  "station_id": "766:UT:SNTL",
+  "league": "stations",
+  "latitude": 40.56914,
+  "longitude": -111.65852,
+  "elevation_ft": 9170
+ },
+ {
+  "station_id": "366:UT:SNTL",
+  "league": "stations",
+  "latitude": 40.59936,
+  "longitude": -111.58167,
+  "elevation_ft": 8790
+ },
+ {
+  "station_id": "814:UT:SNTL",
+  "league": "stations",
+  "latitude": 40.6235,
+  "longitude": -111.53322,
+  "elevation_ft": 9260
+ },
+ {
+  "station_id": "332:UT:SNTL",
+  "league": "stations",
+  "latitude": 41.37603,
+  "longitude": -111.94405,
+  "elevation_ft": 7690
+ },
+ {
+  "station_id": "1154:UT:SNTL",
+  "league": "stations",
+  "latitude": 37.67994,
+  "longitude": -112.85674,
+  "elevation_ft": 10040
+ },
+ {
+  "station_id": "335:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.80364,
+  "longitude": -105.77786,
+  "elevation_ft": 11300
+ },
+ {
+  "station_id": "602:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.67428,
+  "longitude": -105.90264,
+  "elevation_ft": 11410
+ },
+ {
+  "station_id": "415:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.48917,
+  "longitude": -106.17154,
+  "elevation_ft": 10500
+ },
+ {
+  "station_id": "531:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.36092,
+  "longitude": -106.05999,
+  "elevation_ft": 11600
+ },
+ {
+  "station_id": "842:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.61765,
+  "longitude": -106.38019,
+  "elevation_ft": 10290
+ },
+ {
+  "station_id": "542:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.07543,
+  "longitude": -106.61154,
+  "elevation_ft": 10570
+ },
+ {
+  "station_id": "737:CO:SNTL",
+  "league": "stations",
+  "latitude": 39.01467,
+  "longitude": -107.04933,
+  "elevation_ft": 10640
+ },
+ {
+  "station_id": "825:CO:SNTL",
+  "league": "stations",
+  "latitude": 40.5374,
+  "longitude": -106.67655,
+  "elevation_ft": 10610
+ },
+ {
+  "station_id": "874:CO:SNTL",
+  "league": "stations",
+  "latitude": 37.47903,
+  "longitude": -106.80234,
+  "elevation_ft": 10930
+ },
+ {
+  "station_id": "713:CO:SNTL",
+  "league": "stations",
+  "latitude": 37.89168,
+  "longitude": -107.71389,
+  "elevation_ft": 11060
+ },
+ {
+  "station_id": "586:CO:SNTL",
+  "league": "stations",
+  "latitude": 37.79895,
+  "longitude": -107.92475,
+  "elevation_ft": 10190
+ },
+ {
+  "station_id": "689:WY:SNTL",
+  "league": "stations",
+  "latitude": 43.51687,
+  "longitude": -110.91258,
+  "elevation_ft": 8170
+ },
+ {
+  "station_id": "1082:WY:SNTL",
+  "league": "stations",
+  "latitude": 43.77933,
+  "longitude": -110.92783,
+  "elevation_ft": 9260
+ },
+ {
+  "station_id": "822:WY:SNTL",
+  "league": "stations",
+  "latitude": 43.74902,
+  "longitude": -110.0578,
+  "elevation_ft": 9590
+ },
+ {
+  "station_id": "590:MT:SNTL",
+  "league": "stations",
+  "latitude": 45.27412,
+  "longitude": -111.42692,
+  "elevation_ft": 8820
+ },
+ {
+  "station_id": "365:MT:SNTL",
+  "league": "stations",
+  "latitude": 45.89107,
+  "longitude": -110.93851,
+  "elevation_ft": 7370
+ },
+ {
+  "station_id": "664:MT:SNTL",
+  "league": "stations",
+  "latitude": 48.15668,
+  "longitude": -113.9463,
+  "elevation_ft": 6070
+ },
+ {
+  "station_id": "490:ID:SNTL",
+  "league": "stations",
+  "latitude": 43.87497,
+  "longitude": -114.71363,
+  "elevation_ft": 8790
+ },
+ {
+  "station_id": "738:ID:SNTL",
+  "league": "stations",
+  "latitude": 48.37428,
+  "longitude": -116.63917,
+  "elevation_ft": 6090
+ },
+ {
+  "station_id": "370:ID:SNTL",
+  "league": "stations",
+  "latitude": 45.04315,
+  "longitude": -116.13253,
+  "elevation_ft": 6280
+ },
+ {
+  "station_id": "978:ID:SNTL",
+  "league": "stations",
+  "latitude": 43.76377,
+  "longitude": -116.09685,
+  "elevation_ft": 6370
+ },
+ {
+  "station_id": "651:OR:SNTL",
+  "league": "stations",
+  "latitude": 45.32097,
+  "longitude": -121.7158,
+  "elevation_ft": 5380
+ },
+ {
+  "station_id": "815:OR:SNTL",
+  "league": "stations",
+  "latitude": 44.14425,
+  "longitude": -121.64095,
+  "elevation_ft": 5680
+ },
+ {
+  "station_id": "909:WA:SNTL",
+  "league": "stations",
+  "latitude": 48.8661,
+  "longitude": -121.78976,
+  "elevation_ft": 4040
+ },
+ {
+  "station_id": "791:WA:SNTL",
+  "league": "stations",
+  "latitude": 47.74607,
+  "longitude": -121.09288,
+  "elevation_ft": 3940
+ },
+ {
+  "station_id": "672:WA:SNTL",
+  "league": "stations",
+  "latitude": 47.37406,
+  "longitude": -121.44213,
+  "elevation_ft": 4010
+ },
+ {
+  "station_id": "642:WA:SNTL",
+  "league": "stations",
+  "latitude": 46.90585,
+  "longitude": -121.4827,
+  "elevation_ft": 5400
+ },
+ {
+  "station_id": "692:WA:SNTL",
+  "league": "stations",
+  "latitude": 46.62153,
+  "longitude": -121.38643,
+  "elevation_ft": 5800
+ },
+ {
+  "station_id": "679:WA:SNTL",
+  "league": "stations",
+  "latitude": 46.78266,
+  "longitude": -121.74767,
+  "elevation_ft": 5150
+ },
+ {
+  "station_id": "428:CA:SNTL",
+  "league": "stations",
+  "latitude": 39.32565,
+  "longitude": -120.36807,
+  "elevation_ft": 6890
+ },
+ {
+  "station_id": "784:CA:SNTL",
+  "league": "stations",
+  "latitude": 39.18986,
+  "longitude": -120.26576,
+  "elevation_ft": 8010
+ },
+ {
+  "station_id": "848:CA:SNTL",
+  "league": "stations",
+  "latitude": 39.13545,
+  "longitude": -120.21865,
+  "elevation_ft": 6750
+ },
+ {
+  "station_id": "518:CA:SNTL",
+  "league": "stations",
+  "latitude": 38.92431,
+  "longitude": -119.91641,
+  "elevation_ft": 8540
+ },
+ {
+  "station_id": "1067:CA:SNTL",
+  "league": "stations",
+  "latitude": 38.6927,
+  "longitude": -120.0022,
+  "elevation_ft": 8360
+ },
+ {
+  "station_id": "652:NV:SNTL",
+  "league": "stations",
+  "latitude": 39.31573,
+  "longitude": -119.89473,
+  "elevation_ft": 8810
+ },
+ {
+  "station_id": "1168:NM:SNTL",
+  "league": "stations",
+  "latitude": 36.58195,
+  "longitude": -105.45617,
+  "elevation_ft": 11020
+ },
+ {
+  "station_id": "922:NM:SNTL",
+  "league": "stations",
+  "latitude": 35.77154,
+  "longitude": -105.78487,
+  "elevation_ft": 11480
+ },
+ {
+  "station_id": "1103:AK:SNTL",
+  "league": "stations",
+  "latitude": 60.95842,
+  "longitude": -149.08858,
+  "elevation_ft": 1500
+ },
+ {
+  "station_id": "portillo:CL:ERA5",
+  "league": "era5",
+  "latitude": -32.836,
+  "longitude": -70.129,
+  "elevation_ft": 9450
+ },
+ {
+  "station_id": "valle-nevado:CL:ERA5",
+  "league": "era5",
+  "latitude": -33.356,
+  "longitude": -70.249,
+  "elevation_ft": 9925
+ },
+ {
+  "station_id": "nevados-chillan:CL:ERA5",
+  "league": "era5",
+  "latitude": -36.908,
+  "longitude": -71.477,
+  "elevation_ft": 6070
+ },
+ {
+  "station_id": "corralco:CL:ERA5",
+  "league": "era5",
+  "latitude": -38.427,
+  "longitude": -71.572,
+  "elevation_ft": 5900
+ },
+ {
+  "station_id": "antillanca:CL:ERA5",
+  "league": "era5",
+  "latitude": -40.771,
+  "longitude": -72.153,
+  "elevation_ft": 3940
+ },
+ {
+  "station_id": "las-lenas:AR:ERA5",
+  "league": "era5",
+  "latitude": -35.145,
+  "longitude": -70.081,
+  "elevation_ft": 8860
+ },
+ {
+  "station_id": "penitentes:AR:ERA5",
+  "league": "era5",
+  "latitude": -32.859,
+  "longitude": -69.842,
+  "elevation_ft": 9190
+ },
+ {
+  "station_id": "caviahue:AR:ERA5",
+  "league": "era5",
+  "latitude": -37.876,
+  "longitude": -71.037,
+  "elevation_ft": 5900
+ },
+ {
+  "station_id": "chapelco:AR:ERA5",
+  "league": "era5",
+  "latitude": -40.203,
+  "longitude": -71.303,
+  "elevation_ft": 5580
+ },
+ {
+  "station_id": "catedral:AR:ERA5",
+  "league": "era5",
+  "latitude": -41.17,
+  "longitude": -71.443,
+  "elevation_ft": 5910
+ },
+ {
+  "station_id": "castor:AR:ERA5",
+  "league": "era5",
+  "latitude": -54.723,
+  "longitude": -68.121,
+  "elevation_ft": 1970
+ },
+ {
+  "station_id": "whakapapa:NZ:ERA5",
+  "league": "era5",
+  "latitude": -39.253,
+  "longitude": 175.561,
+  "elevation_ft": 6560
+ },
+ {
+  "station_id": "turoa:NZ:ERA5",
+  "league": "era5",
+  "latitude": -39.306,
+  "longitude": 175.529,
+  "elevation_ft": 6560
+ },
+ {
+  "station_id": "mt-hutt:NZ:ERA5",
+  "league": "era5",
+  "latitude": -43.471,
+  "longitude": 171.53,
+  "elevation_ft": 6230
+ },
+ {
+  "station_id": "remarkables:NZ:ERA5",
+  "league": "era5",
+  "latitude": -45.054,
+  "longitude": 168.812,
+  "elevation_ft": 6230
+ },
+ {
+  "station_id": "coronet-peak:NZ:ERA5",
+  "league": "era5",
+  "latitude": -44.921,
+  "longitude": 168.734,
+  "elevation_ft": 4920
+ },
+ {
+  "station_id": "cardrona:NZ:ERA5",
+  "league": "era5",
+  "latitude": -44.874,
+  "longitude": 168.948,
+  "elevation_ft": 5580
+ },
+ {
+  "station_id": "treble-cone:NZ:ERA5",
+  "league": "era5",
+  "latitude": -44.633,
+  "longitude": 168.897,
+  "elevation_ft": 5580
+ },
+ {
+  "station_id": "perisher:AU:ERA5",
+  "league": "era5",
+  "latitude": -36.405,
+  "longitude": 148.41,
+  "elevation_ft": 5910
+ },
+ {
+  "station_id": "thredbo:AU:ERA5",
+  "league": "era5",
+  "latitude": -36.504,
+  "longitude": 148.29,
+  "elevation_ft": 6230
+ },
+ {
+  "station_id": "falls-creek:AU:ERA5",
+  "league": "era5",
+  "latitude": -36.866,
+  "longitude": 147.278,
+  "elevation_ft": 5410
+ },
+ {
+  "station_id": "hotham:AU:ERA5",
+  "league": "era5",
+  "latitude": -36.976,
+  "longitude": 147.135,
+  "elevation_ft": 5740
+ },
+ {
+  "station_id": "mt-buller:AU:ERA5",
+  "league": "era5",
+  "latitude": -37.146,
+  "longitude": 146.447,
+  "elevation_ft": 5250
+ },
+ {
+  "station_id": "mt-hutt:NZ:RESORT",
+  "league": "resorts",
+  "latitude": -43.471,
+  "longitude": 171.53,
+  "elevation_ft": 6230
+ },
+ {
+  "station_id": "remarkables:NZ:RESORT",
+  "league": "resorts",
+  "latitude": -45.054,
+  "longitude": 168.812,
+  "elevation_ft": 6230
+ },
+ {
+  "station_id": "coronet-peak:NZ:RESORT",
+  "league": "resorts",
+  "latitude": -44.921,
+  "longitude": 168.734,
+  "elevation_ft": 4920
+ },
+ {
+  "station_id": "thredbo:AU:RESORT",
+  "league": "resorts",
+  "latitude": -36.504,
+  "longitude": 148.29,
+  "elevation_ft": 6230
+ },
+ {
+  "station_id": "catedral:AR:RESORT",
+  "league": "resorts",
+  "latitude": -41.17,
+  "longitude": -71.443,
+  "elevation_ft": 6560
+ }
+]

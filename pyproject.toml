@@ -1,0 +1,22 @@
+[project]
+name = "mogger"
+version = "0.1.0"
+description = "southern-league-mogger: a calibrated multi-model snowfall forecasting bot for PowderBench"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0",
+    "requests>=2.28",
+]
+
+[project.scripts]
+mogger = "mogger.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
