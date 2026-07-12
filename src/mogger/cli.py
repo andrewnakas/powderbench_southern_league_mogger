@@ -67,7 +67,7 @@ def run(argv: list[str] | None = None) -> int:
                 log.info("wrote %s", out)
 
             try:
-                result = push_csv(df, league, rnd.round_id, cfg, dry_run=args.dry_run)
+                result = push_csv(df, league, rnd.round_id, cfg, cutoff_utc=rnd.cutoff_utc, dry_run=args.dry_run)
                 log.info("[%s %s] %d rows -> %s", league, rnd.round_id, len(df), result)
                 submitted += 1
             except Exception as exc:

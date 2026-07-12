@@ -29,6 +29,13 @@ league's cutoff.
 4. **Never miss a round**: any station/model gap falls back to the benchmark's
    own climatology (which scores 0 by definition); a full Open-Meteo outage
    submits pure climatology rather than nothing.
+5. **PR-first submission**: each submission is pushed to a
+   `submit/<team>-<league>-<round>` branch of the benchmark and opened as a PR
+   for the benchmark's auto-merge gate, which validates it and squash-merges —
+   the same audited path every competitor uses, and the path that keeps the
+   team name bound to its owner in `data/teams.yaml`. If the gate hasn't
+   merged and the cutoff is under 2 hours away, the bot falls back to a direct
+   push to `main` so a gate outage can't cost a round.
 
 Fitted coefficients are committed under `data/calibration/*.json` — the
 `resorts` file is tagged `"provenance": "prior"` (softened era5 fit at the
@@ -50,10 +57,12 @@ the others. Off-season leagues simply have no open rounds and no-op.
 
 ### One-time setup
 
-Create a **fine-grained GitHub PAT** with *Contents: Read & Write* scoped to
-`andrewnakas/powderbench`, and add it to this repo as the Actions secret
-**`POWDERBENCH_TOKEN`**. That's the whole setup — submissions land directly on
-the benchmark's `main`, which is what makes them count before the cutoff.
+Create a **fine-grained GitHub PAT** scoped to `andrewnakas/powderbench` with
+*Contents: Read & Write* **and** *Pull requests: Read & Write*, and add it to
+this repo as the Actions secret **`POWDERBENCH_TOKEN`**. That's the whole
+setup — the bot PRs each submission to the benchmark's auto-merge gate (with a
+direct-push-to-main fallback near the cutoff, which is what makes a submission
+count).
 
 ## Running by hand
 
