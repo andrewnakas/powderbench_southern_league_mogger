@@ -509,5 +509,61 @@
   "latitude": -41.17,
   "longitude": -71.443,
   "elevation_ft": 6560
+ },
+ {
+  "station_id": "turoa:NZ:RESORT",
+  "league": "resorts",
+  "latitude": -39.306,
+  "longitude": 175.529,
+  "elevation_ft": 6560
+ },
+ {
+  "station_id": "whakapapa:NZ:RESORT",
+  "league": "resorts",
+  "latitude": -39.253,
+  "longitude": 175.561,
+  "elevation_ft": 6560
+ },
+ {
+  "station_id": "chapelco:AR:RESORT",
+  "league": "resorts",
+  "latitude": -40.203,
+  "longitude": -71.303,
+  "elevation_ft": 6560
+ },
+ {
+  "station_id": "la-hoya:AR:RESORT",
+  "league": "resorts",
+  "latitude": -42.846,
+  "longitude": -71.272,
+  "elevation_ft": 5910
+ },
+ {
+  "station_id": "portillo:CL:RESORT",
+  "league": "resorts",
+  "latitude": -32.836,
+  "longitude": -70.129,
+  "elevation_ft": 9450
+ },
+ {
+  "station_id": "valle-nevado:CL:RESORT",
+  "league": "resorts",
+  "latitude": -33.356,
+  "longitude": -70.249,
+  "elevation_ft": 9925
+ },
+ {
+  "station_id": "antillanca:CL:RESORT",
+  "league": "resorts",
+  "latitude": -40.771,
+  "longitude": -72.153,
+  "elevation_ft": 3940
+ },
+ {
+  "station_id": "las-lenas:AR:RESORT",
+  "league": "resorts",
+  "latitude": -35.145,
+  "longitude": -70.081,
+  "elevation_ft": 11250
  }
 ]

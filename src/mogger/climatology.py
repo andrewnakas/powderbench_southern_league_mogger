@@ -1,24 +1,39 @@
-"""Climatology snapshot (vendored copies of powderbench data/climatology/*.csv).
+"""Climatology: the benchmark's own per-station day-of-year tables, fetched
+live from its main branch (so new stations are covered the day they appear),
+with the committed snapshot as offline fallback.
 
-Used two ways: as the fallback forecast when model data is missing (climatology
-scores exactly 0 by construction, never a hole in coverage), and nowhere else —
-the calibrated ensemble does not blend toward it unless fitting said so.
-Regenerate with scripts/refresh_static.py.
+Used as the fallback forecast when model data is missing — climatology scores
+exactly 0 by construction, never a hole in coverage.
+Regenerate the snapshot with scripts/refresh_static.py.
 """
 
 from __future__ import annotations
 
+import logging
 from functools import lru_cache
+from io import StringIO
 
 import pandas as pd
+import requests
 
 from . import HORIZONS, QUANTILE_COLS
-from .config import REPO_ROOT
+from .config import CONFIG_PATH, REPO_ROOT, load_config
+
+log = logging.getLogger(__name__)
+
+TIMEOUT = 30
 
 
 @lru_cache
 def load_climatology(league: str) -> pd.DataFrame:
-    return pd.read_csv(REPO_ROOT / "data" / "climatology" / f"{league}.csv")
+    try:
+        raw_base = load_config(CONFIG_PATH).raw_base
+        resp = requests.get(f"{raw_base}/data/climatology/{league}.csv", timeout=TIMEOUT)
+        resp.raise_for_status()
+        return pd.read_csv(StringIO(resp.text))
+    except Exception as exc:
+        log.warning("[%s] live climatology unavailable (%s), using snapshot", league, exc)
+        return pd.read_csv(REPO_ROOT / "data" / "climatology" / f"{league}.csv")
 
 
 def climo_rows(league: str, station_id: str, doy: int) -> list[dict] | None:
